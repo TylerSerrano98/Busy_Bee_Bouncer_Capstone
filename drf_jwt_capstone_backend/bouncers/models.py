@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Bouncer(models.Model):
-    Name 
-    Price
-    Dimensions
-    Description
+    Name = models.CharField(max_length=50, blank=True)
+    Price = models.DecimalField(max_digits=10, decimal_places=2)
+    Dimensions = models.TextField(max_length=20)
+    Description = models.TextField(max_length=300)
