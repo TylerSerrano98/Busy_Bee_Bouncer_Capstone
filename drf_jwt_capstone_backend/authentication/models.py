@@ -11,4 +11,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    middle_name = models.CharField(max_length=20)
+    Middle_Name = models.CharField(max_length=20)
+    Home_Address = models.TextField(max_length=100, default='default')
+    Phone_Number = models.TextField(max_length=12, default='default')
+
